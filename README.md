@@ -37,6 +37,18 @@ out.backward()
 opt.step()
 ```
 
+## Demo
+
+[`notebooks/demo.ipynb`](notebooks/demo.ipynb) walks through a full training example:
+
+- Binary classification on the `make_circles` dataset
+- MLP with hinge loss and L2 regularization
+- Mini-batch training loop with Adam
+- Train/val accuracy tracking
+- Decision boundary visualization
+
+Reaches ~94% val accuracy in 100 epochs.
+
 ## Requirements
 
 - Python >= 3.10
