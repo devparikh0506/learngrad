@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "learngrad"
+version = "0.1.0"
+description = "A minimal scalar-valued autograd engine with neural network primitives, built for learning purposes."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Dev Parikh", email = "dev.dpparikh@gmail.com" }]
+dependencies = ["numpy>=1.24"]
+keywords = ["autograd", "neural-network", "deep-learning", "education", "optimizers"]
+
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+     "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/devparikh0506/learngrad"
+
+[tool.setuptools.packages.find]
+include = ["learngrad*"]
